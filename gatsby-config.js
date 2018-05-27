@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "David Johnson's Info Site",
+    title: "DaveOps",
+    colorPrimary: '#4286f4',
+    colorSecondary: '#963c3c',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }

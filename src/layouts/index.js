@@ -14,7 +14,11 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header 
+      siteTitle={data.site.siteMetadata.title} 
+      colorPrimary={data.site.siteMetadata.colorPrimary}
+      colorSecondary={data.site.siteMetadata.colorSecondary} 
+    />
     <div
       style={{
         margin: '0 auto',
@@ -38,7 +42,9 @@ export const query = graphql`
   query SiteTitleQuery {
     site {
       siteMetadata {
-        title
+        title,
+        colorPrimary,
+        colorSecondary,
       }
     }
   }
