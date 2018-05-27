@@ -6,7 +6,7 @@ const Header = ({ siteTitle, colorPrimary, colorSecondary }) => (
     style={{
       background: colorPrimary,
       marginBottom: '1.45rem',
-      borderBottom: `5px solid ${colorSecondary}`,
+      // borderBottom: `5px solid ${colorSecondary}`,
     }}
   >
     <div
